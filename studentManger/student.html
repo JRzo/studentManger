@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Manager</title>
+    <link rel="stylesheet" href="css/student.css">
+</head>
+<body>
+    <nav id='menu'>
+        <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+        <ul>
+          <li><a href='index.html'>Home</a></li>
+          <li><a class='dropdown-arrow' href='http://'>Edit</a>
+            <ul class='sub-menus'>
+              <li><a href='student.html'>Student</a></li>
+              <li><a href='studentPortal.html'>Portal</a></li>
+              <li><a href='http://'>Contact</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    <h1>Welcome to the Student Manager </h1>
+
+    <section id="inputSection">
+        <label for="studentInpt" id="labelInput">
+            <h4>Insert a list of student</h4>
+            <input type="file" value="Enter Student" id="inputStudentID" onchange=read(this)>
+
+        </label>
+
+        <div id="inputStudent">
+
+          <h3>
+            Last-Name
+            Name
+            Language 
+            Student ID 
+            Grade 
+            Race
+          </h3>
+
+          <div class="output" maxlength="110"></div>
+
+        </div>
+
+
+
+    </section>
+    <script src="js/student.js"></script>
+</body>
+</html>

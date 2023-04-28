@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Report</title>
+    <link rel="stylesheet" href="css/studentPortal.css">
+</head>
+<body>
+    <nav id='menu'>
+        <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+        <ul>
+          <li><a href='index.html'>Home</a></li>
+          <li><a class='dropdown-arrow' href='http://'>Edit</a>
+            <ul class='sub-menus'>
+              <li><a href='student.html'>Student</a></li>
+              <li><a href="studentPortal.html"></a></li>
+              <li><a href='http://'>Contact</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+    <main>
+        <h1>
+            Student Portal
+        </h1>
+
+        <div id="tableSection">
+            <table id="tableID">
+                <tr>
+                    <th>Last Name</th>
+                    <th>Name</th>
+                    <th>Language</th>
+                    <th>Student ID</th>
+                    <th>Grade</th>
+                    <th>Race</th>
+                </tr>
+            </table>
+        </div>
+
+        <div id="input">
+
+            <label for="addingStudent">
+                <input type="button" value="Add Student" id="addStudentButton">
+                <input type="button" value="Remove Student" id="removeStudentButton" hidden>
+            
+            </label>
+
+            <div id="studentRegister">
+                
+                <p>Last-Name<input type="text" name="lastName" id="lastname"></p>
+                <p>Name <input type="text" name="Name" id="name"></p>
+                <p>Language <input type="text" name="language" id="language"></p>
+                <p>Student ID <input type="text" name="language" id="language"></p>
+                <p>Grade <input type="text" name="grade" id="grade"></p>
+                <p>Race <input type="text" name="race" id="race"></p>
+
+            </div>
+
+        </div>
+    </main>
+
+    <script src="js/studentPortal.js"></script>
+    
+</body>
+</html>

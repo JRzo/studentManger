@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="+nxGUDJ4QpAZ5l9Bsjdi102tLVC21AIh5d1Nl23908vVuFHs34=">
+    <meta name="description" content="Author: Julio Rodriguez"> 
+    <meta name="robots" content="noindex, nofollow">
+    <title>Student Mananager 1.0.0.1</title>
+    <link rel="stylesheet" href="css/styleIndex.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <nav id='menu' hidden>
+        <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+        <ul>
+          <li><a href='/studentManger/index.html'>Home</a></li>
+          <li><a class='dropdown-arrow' href='http://'>Edit</a>
+            <ul class='sub-menus'>
+              <li><a href='student.html'>Student</a></li>
+              <li><a href='http://'>Teachers</a></li>
+              <li><a href='http://'>Contact</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    <main>
+        <div class="verificationDiv">
+
+            <img src="https://th.bing.com/th/id/R.433ca74513b5f8e97010cfc3ded82de1?rik=C7p1tQHTzH118A&pid=ImgRaw&r=0"
+             alt="educationLogo" id="educationLogo">
+
+            <form action="POST">
+                <label for="username">
+                    Username:
+                    <input type="text" name="username" id="usernameID" required maxlength="20">
+                </label>
+                <label for="password">
+                    Password: 
+                    <input type="text" name="password" id="passwordID" required maxlength="20">
+                </label>
+                <label for="buttonLogin"> <input type="button" value="Submit" id="buttonLogin"></label>
+            </form>
+
+        </div>
+
+        <div id="home" hidden>
+
+            <h1>Welcome to School Portal</h1>
+
+            <section id="sectionSchool">
+                <h4>
+                    Education is a process of learning and growing as one gains understanding about the surrounding world.  This is a lifelong process. 
+                    It is, as John Dewey (1916) put it, a social process = a process of living and not a preparation for future living.
+                    Schooling can often look like an institution with a very specific motive - drill learning into people according to some plan often drawn up by others. 
+                    Paulo Friere (1973) famously called this banking - making deposits of knowledge.  This type of “schooling” treats learners like objects.
+                </h4>
+                <img src="https://cdn.pixabay.com/photo/2013/04/19/01/15/university-105709_960_720.jpg"
+                 alt="Pictures of kids in school" id="schoolingDef" >
+            </section>
+
+            <section id="newsTrending">
+                <h3>News in the world</h3>
+                <ul>
+                    <li>
+                        <h4>
+                            <a href="https://www.msn.com/en-us/news/us/supreme-court-keeps-status-quo-on-abortion-pill-for-now-thomas-and-alito-dissent/ar-AA1aaB4N">
+                                Supreme Courts ....
+                            </a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <a href="https://www.msn.com/en-us/news/world/peru-ex-president-surrenders-for-extradition-from-us/ar-AA1aak9L">
+                                Peru ex-president ....
+                            </a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <a href="https://www.msn.com/en-us/news/politics/montana-transgender-lawmaker-silenced-what-to-know/ar-AA1aajrt">
+                                Montana transgende ....
+                            </a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <a href="https://www.msn.com/en-us/news/us/grieving-parents-fight-to-block-online-sales-of-a-recalled-baby-sleeper/ar-AA1a9EaT">
+                                Grieving parents ....
+                            </a>
+                        </h4>
+                    </li>
+                </ul>
+            </section>
+
+        </div>
+
+    </main>
+
+    <script src="js/index.js"></script>
+    
+    
+</body>
+<footer id="footID" >
+    <hr>
+    <div class="footer-basic">
+        <footer>
+            <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Home</a></li>
+                <li class="list-inline-item"><a href="#">Services</a></li>
+                <li class="list-inline-item"><a href="#">About</a></li>
+                <li class="list-inline-item"><a href="#">Terms</a></li>
+                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+            </ul>
+            <p class="copyright">Company Name © 2018</p>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
+
+
+</footer>
+</html>
